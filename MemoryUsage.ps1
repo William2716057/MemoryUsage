@@ -1,4 +1,4 @@
-#get top ten processes using most memory
+#get top twenty processes using most memory
 $topProcesses= Get-Process | Sort-Object -Property WorkingSet -Descending | Select-Object -First 20
 
 #result output
